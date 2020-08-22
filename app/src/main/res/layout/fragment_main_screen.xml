@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/button"
+        app:layout_constraintEnd_toEndOf="@+id/infobutton"
+        app:layout_constraintStart_toStartOf="@+id/infobutton"
+        app:layout_constraintTop_toBottomOf="@+id/mainScreenLogoImageView" />
+
+    <ImageView
+        android:id="@+id/infobutton"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/playTextView"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="OYNA"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="@+id/playButton"
+        app:layout_constraintStart_toStartOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="NASIL OYNANIR?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/infobutton"
+        app:layout_constraintEnd_toEndOf="@+id/infobutton"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="@+id/infobutton" />
+
+    <ImageView
+        android:id="@+id/mainScreenLogoImageView"
+        android:layout_width="110dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/playButton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

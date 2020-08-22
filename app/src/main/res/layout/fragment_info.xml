@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlight">
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Oyuna başla butonuna bastığınız andan itibaren 60 saniyeniz vardır. 60 saniye içinde gelen giflere olumlu mu yoksa olumsuz mu tepki verildiğini reflekslerinizin hızına bağlı olarak oylamaya başlarsınız. Her doğru cevap için 10 puan kazanılır, her yanlış cevap için ise 10 puan azaltılır. 60 saniye sonunda oyun biter. Fotoğrafların yüklenme hızı internet hızınıza bağlı olarak uzun veya kısa sürebilir.\n\nİYİ OYUNLAR"
+        android:textAlignment="center"
+        android:textColor="#FFD003"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="NASIL OYNANIR?"
+        android:textAlignment="center"
+        android:textColor="#FFD003"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

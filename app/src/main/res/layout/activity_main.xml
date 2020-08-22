@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:background="@drawable/backgroundlight">
+
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="303dp"
+        android:layout_height="283dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="123dp" />
+
+    <ImageView
+        android:id="@+id/yesImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@drawable/yesbutton" />
+
+    <ImageView
+        android:id="@+id/noImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@drawable/nobutton" />
+
+    <ImageView
+        android:id="@+id/scoreImageView"
+        android:layout_width="67dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/score" />
+
+    <ImageView
+        android:id="@+id/timeImageView"
+        android:layout_width="67dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        app:srcCompat="@drawable/time" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="21dp"
+        android:text="100"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="198dp" />
+</RelativeLayout>
